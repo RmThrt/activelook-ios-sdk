@@ -115,6 +115,12 @@ public class LayoutParameters {
         return self
     }
 
+    public func addSubCommandGrayscale(c: UInt8) -> LayoutParameters {
+        self.subCommands.append(0x03)
+        self.subCommands.append(c)
+        return self
+    }
+
     public func addSubCommandColor(c: UInt8) -> LayoutParameters {
         self.subCommands.append(0x03)
         self.subCommands.append(c)

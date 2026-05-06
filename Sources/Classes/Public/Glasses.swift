@@ -663,6 +663,12 @@ public class Glasses {
     
     /// Sets the grey level used to draw the next graphical element
     /// - Parameter level: The grey level to be used between 0 and 15
+    public func grayscale(level: UInt8) {
+        sendCommand(id: .grayscale, withValue: level)
+    }
+
+    /// Sets the color level used to draw the next graphical element
+    /// - Parameter level: The color level to be used between 0 and 255
     public func color(level: UInt8) {
         sendCommand(id: .color, withValue: level)
     }

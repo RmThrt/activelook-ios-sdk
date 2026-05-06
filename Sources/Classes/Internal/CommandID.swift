@@ -35,7 +35,8 @@ internal enum CommandID: UInt8 {
     case gesture = 0x21
     case als = 0x22
 
-    case color = 0x30
+    case grayscale = 0x30
+    case color = 0x3D
     case point = 0x31
     case line = 0x32
     case rect = 0x33

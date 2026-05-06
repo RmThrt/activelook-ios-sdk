@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Version 4.6.0
+
+### New Features
+
+- Rename `color` to `grayscale` (command 0x30, values 0-15)
+- Add `color` function (command 0x3D, values 0-255)
+- Add `addSubCommandGrayscale` in `LayoutParameters` and `LayoutExtraCmd`
+
 ## Version 4.5.5
 
 ### Fixes

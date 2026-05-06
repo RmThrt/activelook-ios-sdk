@@ -47,7 +47,12 @@ public class LayoutExtraCmd {
         self.subCommands += r.asUInt8Array
     }
 
-    public func addSubCommandColor(c: UInt8){
+    public func addSubCommandGrayscale(c: UInt8) {
+        self.subCommands.append(0x03)
+        self.subCommands.append(c)
+    }
+
+    public func addSubCommandColor(c: UInt8) {
         self.subCommands.append(0x03)
         self.subCommands.append(c)
     }
